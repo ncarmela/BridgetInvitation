@@ -23,7 +23,7 @@ export default function Footer() {
 
         {/* Closing Line */}
         <p className="text-xs text-[#8c715a] tracking-wider">
-          © 2025 Made with by Nina. All Rights Reserved.
+          © 2025 Made by Nina C. Nambio. All Rights Reserved.
         </p>
       </div>
     </footer>
