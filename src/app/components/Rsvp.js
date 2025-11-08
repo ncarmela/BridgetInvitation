@@ -7,7 +7,7 @@ export default function Rsvp() {
           <div className="flex flex-col md:flex-row justify-center items-center gap-10 text-center md:text-left">
             
             {/* Left side: QR + Button */}
-            <div className="flex flex-col items-center md:items-start">
+            <div className="flex flex-col justify-center items-center ">
               <img
                 src="/pictures/RSVP.png"
                 alt="RSVP QR Code"

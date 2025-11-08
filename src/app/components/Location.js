@@ -7,12 +7,14 @@ export default function Location() {
           {/* Google Map Embed */}
           <div className="w-full md:w-1/2">
             <iframe
-              title="Event Location"
-              src="https://www.google.com/maps/place/FW8V%2BQH9+Luzviminda%E2%80%99s+Event+Center,+Street,+Cabanatuan+City,+Nueva+Ecija/data=!4m2!3m1!1s0x3397288adce73261:0xb47ef3424f4e4b76?utm_source=mstt_1&entry=gps&coh=192189&g_ep=CAESBzI1LjQzLjQYACDXggMqqwEsOTQyNjc3MjcsOTQyOTIxOTUsOTQyODQ0NjAsOTQyMjMyOTksOTQyMTY0MTMsOTQyODA1NzYsOTQyMTI0OTYsOTQyMDczOTQsOTQyMDc1MDYsOTQyMDg1MDYsOTQyMTc1MjMsOTQyMTg2NTMsOTQyMjk4MzksOTQyNzUxNjgsOTQyNzk2MTksOTQyOTU1MDgsNDcwODQzOTMsOTQyMTMyMDAsOTQyOTI3NjhCAlBI&skid=6e293c87-6637-48be-8876-b23d02681749&g_st=afm"
-              className="w-full h-64 md:h-80 rounded-xl border border-[#d8c3a5]"
-              allowFullScreen=""
-              loading="lazy"
-            ></iframe>
+  title="Event Location"
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3833.459431626803!2d120.96891597432056!3d15.480780888249302!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397288adce73261%3A0xb47ef3424f4e4b76!2sLuzviminda%20Catering%2C%20Cabanatuan%20City%2C%20Nueva%20Ecija!5e0!3m2!1sen!2sph!4v1709856000000!5m2!1sen!2sph"
+  className="w-full h-64 md:h-80 rounded-xl border border-[#d8c3a5]"
+  allowFullScreen
+  loading="lazy"
+  referrerPolicy="no-referrer-when-downgrade"
+/>
+
           </div>
 
           {/* Venue Details */}
@@ -33,7 +35,7 @@ export default function Location() {
             </p>
 
             <a
-              href="https://maps.app.goo.gl/SEBbFiN5zLULupbaA"
+              href="https://www.google.com/maps/place/FW8V%2BQH9+Luzviminda%E2%80%99s+Event+Center,+Street,+Cabanatuan+City,+Nueva+Ecija/data=!4m2!3m1!1s0x3397288adce73261:0xb47ef3424f4e4b76?utm_source=mstt_1&entry=gps&coh=192189&g_ep=CAESBzI1LjQzLjQYACDXggMqqwEsOTQyNjc3MjcsOTQyOTIxOTUsOTQyODQ0NjAsOTQyMjMyOTksOTQyMTY0MTMsOTQyODA1NzYsOTQyMTI0OTYsOTQyMDczOTQsOTQyMDc1MDYsOTQyMDg1MDYsOTQyMTc1MjMsOTQyMTg2NTMsOTQyMjk4MzksOTQyNzUxNjgsOTQyNzk2MTksOTQyOTU1MDgsNDcwODQzOTMsOTQyMTMyMDAsOTQyOTI3NjhCAlBI&skid=6e293c87-6637-48be-8876-b23d02681749&g_st=afm"
               target="_blank"
               rel="noopener noreferrer"
               className="border border-[#d8c3a5] px-8 py-2 rounded-md text-[#6b4f3b] tracking-wide 
