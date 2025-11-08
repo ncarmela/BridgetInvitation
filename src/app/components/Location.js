@@ -24,7 +24,7 @@ export default function Location() {
             </h2>
 
             <p className="mb-3 text-base tracking-wide">
-              <span className="font-semibold">Luzviminda Catering</span>
+              <span className="font-semibold">Luzviminda’s Event Center</span>
               <br />
               FW8V+QH9, Street, Cabanatuan City, Nueva Ecija
             </p>
