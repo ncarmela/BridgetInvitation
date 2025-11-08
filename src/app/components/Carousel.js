@@ -31,7 +31,7 @@ export default function Carousel({ activeSection, setActiveSection }) {
             }`}
             onClick={() => setActiveSection(slide.title)}
           >
-            <div className="bg-white rounded-2xl overflow-hidden flex justify-center items-center h-[220px] sm:h-[300px] md:h-[400px] shadow-lg cursor-pointer">
+            <div className="bg-white rounded-2xl overflow-hidden flex justify-center items-center aspect-square shadow-lg cursor-pointer">
               <img
                 src={slide.image}
                 alt={slide.title}
