@@ -108,8 +108,7 @@ export default function LandingPage() {
       {/* Carousel Section */}
       <Carousel activeSection={activeSection} setActiveSection={setActiveSection} />
 
-      {/* Divider Line */}
-      <div className="mx-auto w-1/2 py-0 border-t border-[#d8c3a5]" />
+      
 
       {/* Active Section Cards */}
       {sections

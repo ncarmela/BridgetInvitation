@@ -8,7 +8,7 @@ export default function Location() {
           <div className="w-full md:w-1/2">
             <iframe
               title="Event Location"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7728.320392903928!2d120.9661!3d15.4865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x339729ff1d31bb1b%3A0x4df1df2d86e73561!2sLuzviminda%20Catering!5e0!3m2!1sen!2sph!4v1731067200000!5m2!1sen!2sph"
+              src="https://www.google.com/maps/place/FW8V%2BQH9+Luzviminda%E2%80%99s+Event+Center,+Street,+Cabanatuan+City,+Nueva+Ecija/data=!4m2!3m1!1s0x3397288adce73261:0xb47ef3424f4e4b76?utm_source=mstt_1&entry=gps&coh=192189&g_ep=CAESBzI1LjQzLjQYACDXggMqqwEsOTQyNjc3MjcsOTQyOTIxOTUsOTQyODQ0NjAsOTQyMjMyOTksOTQyMTY0MTMsOTQyODA1NzYsOTQyMTI0OTYsOTQyMDczOTQsOTQyMDc1MDYsOTQyMDg1MDYsOTQyMTc1MjMsOTQyMTg2NTMsOTQyMjk4MzksOTQyNzUxNjgsOTQyNzk2MTksOTQyOTU1MDgsNDcwODQzOTMsOTQyMTMyMDAsOTQyOTI3NjhCAlBI&skid=6e293c87-6637-48be-8876-b23d02681749&g_st=afm"
               className="w-full h-64 md:h-80 rounded-xl border border-[#d8c3a5]"
               allowFullScreen=""
               loading="lazy"
@@ -24,7 +24,7 @@ export default function Location() {
             <p className="mb-3 text-base tracking-wide">
               <span className="font-semibold">Luzviminda Catering</span>
               <br />
-              FXPG+59C, Sampaguita St, Cabanatuan City, Nueva Ecija
+              FW8V+QH9, Street, Cabanatuan City, Nueva Ecija
             </p>
 
             <p className="mb-5 text-base tracking-wide">
