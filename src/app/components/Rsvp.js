@@ -33,7 +33,7 @@ export default function Rsvp() {
                 PLEASE LET ME KNOW IF YOU’LL BE JOINING MY SPECIAL DAY BY CLICKING THE RSVP BUTTON.
               </p>
               <p className="mb-4 font-semibold tracking-wide text-base">
-                KINDLY RSVP BY <span className="font-bold">NOVEMBER 20</span>. I CAN’T WAIT TO SHARE A NIGHT FILLED WITH LOVE, LAUGHTER, AND UNFORGETTABLE MEMORIES WITH YOU!
+                KINDLY RSVP BY <span className="font-bold">NOVEMBER 15</span>. I CAN’T WAIT TO SHARE A NIGHT FILLED WITH LOVE, LAUGHTER, AND UNFORGETTABLE MEMORIES WITH YOU!
               </p>
               <p className="italic text-sm tracking-wide">
                 Due to limited seating, I’m unable to accommodate additional guests. Your understanding means the world to me — I truly look forward to celebrating this once-in-a-lifetime moment with you.

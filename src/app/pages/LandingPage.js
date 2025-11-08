@@ -8,6 +8,7 @@ import DressCode from "../components/DressCode";
 import Rsvp from "../components/Rsvp";
 import Location from "../components/Location";
 import Footer from "../components/Footer";
+import { motion } from "framer-motion";
 
 export default function LandingPage() {
   const [activeSection, setActiveSection] = useState("18 Roses");
@@ -71,6 +72,11 @@ export default function LandingPage() {
     }
   ];
 
+  const fadeUp = {
+    hidden: { opacity: 0, y: 50 },
+    visible: { opacity: 1, y: 0 },
+  };
+
   return (
     <>
       <header className="w-full relative overflow-hidden">
@@ -79,50 +85,85 @@ export default function LandingPage() {
           alt="Header"
           className="w-full h-auto object-cover"
         />
-        <img
-          src="/pictures/Banner.png"
-          alt="Banner"
-          className="w-full mt-4 h-auto object-cover"
-        />
+        <motion.img
+      src="/pictures/Banner.png"
+      alt="Banner"
+      className="w-full mt-4 h-auto object-cover rounded-xl"
+      initial={{ opacity: 0, y: 50 }} // start hidden and lower
+      whileInView={{ opacity: 1, y: 0 }} // animate when scrolled into view
+      transition={{ duration: 0.8, ease: "easeOut" }}
+      viewport={{ once: true, amount: 0.2 }} // trigger once, when 20% visible
+    />
       </header>
+<main className="min-h-screen bg-gradient-to-b from-[#f7f4ef] to-[#f7f4ef] text-gray-800 text-center font-[serif] overflow-visible">
+      
+      <motion.section
+      variants={fadeUp}
+      initial="hidden"
+      whileInView="visible"
+      transition={{ duration: 1, ease: "easeOut" }}
+      viewport={{ once: true, amount: 0.2 }}
+      className="space-y-4"
+    >
+      {/* Carousel Section */}
+      <Carousel activeSection={activeSection} setActiveSection={setActiveSection} />
 
-      <main className="min-h-screen bg-gradient-to-b from-[#f7f4ef] to-[#f7f4ef] text-gray-800 text-center font-[serif] overflow-visible">
-       
-        <section>
-          <Carousel
-            activeSection={activeSection}
-            setActiveSection={setActiveSection}
-          />
-        </section>
+      {/* Divider Line */}
+      <div className="mx-auto w-1/2 py-0 border-t border-[#d8c3a5]" />
 
-       
-        <div className="mx-auto w-1/2 py-0 border-t border-[#d8c3a5]" />
+      {/* Active Section Cards */}
+      {sections
+        .filter((group) => group.title === activeSection)
+        .map((group) => (
+          <Card key={group.title} section={group} />
+        ))}
+    </motion.section>
+    
+      {/* Photo Strip */}
+      <motion.img
+        src="/pictures/PhotoStrip.png"
+        alt="PhotoStrip"
+        className="w-full h-auto object-cover mt-4"
+        variants={fadeUp}
+        initial="hidden"
+        whileInView="visible"
+        transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
+        viewport={{ once: true, amount: 0.2 }}
+      />
 
-        
-        {sections
-          .filter((group) => group.title === activeSection)
-          .map((group) => (
-            <Card key={group.title} section={group} />
-          ))}
-
-
-        <img
-          src="/pictures/PhotoStrip.png"
-          alt="PhotoStrip"
-          className="w-full h-auto object-cover"
-        />
-
-
-
+      {/* Dress Code */}
+      <motion.div
+        variants={fadeUp}
+        initial="hidden"
+        whileInView="visible"
+        transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
+        viewport={{ once: true, amount: 0.2 }}
+      >
         <DressCode />
+      </motion.div>
 
-        <Location/>
+      {/* Location */}
+      <motion.div
+        variants={fadeUp}
+        initial="hidden"
+        whileInView="visible"
+        transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
+        viewport={{ once: true, amount: 0.2 }}
+      >
+        <Location />
+      </motion.div>
 
+      {/* RSVP */}
+      <motion.div
+        variants={fadeUp}
+        initial="hidden"
+        whileInView="visible"
+        transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
+        viewport={{ once: true, amount: 0.2 }}
+      >
         <Rsvp />
-
-
-
-      </main>
+      </motion.div>
+    </main>
 
       <footer>
         <Footer />

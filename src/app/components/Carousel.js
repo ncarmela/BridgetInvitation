@@ -3,6 +3,7 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
 import "swiper/css";
+import { useRef } from "react";
 
 export default function Carousel({ activeSection, setActiveSection }) {
   const slides = [
@@ -12,6 +13,8 @@ export default function Carousel({ activeSection, setActiveSection }) {
     { id: 4, title: "18 Shots", image: "/pictures/Shots.png" },
   ];
 
+  const swiperRef = useRef(null);
+
   return (
     <div className="w-full relative py-10 bg-[#f7f4ef]">
       <Swiper
@@ -20,6 +23,7 @@ export default function Carousel({ activeSection, setActiveSection }) {
         slidesPerView={"auto"}
         centeredSlides={true}
         loop={true}
+        onSwiper={(swiper) => (swiperRef.current = swiper)}
         onSlideChange={(swiper) => setActiveSection(slides[swiper.realIndex].title)}
         className="w-[calc(100%-20px)] mx-auto"
       >
@@ -27,9 +31,14 @@ export default function Carousel({ activeSection, setActiveSection }) {
           <SwiperSlide
             key={slide.id}
             className={`!w-[70%] sm:!w-[60%] md:!w-[50%] transition-all duration-500 ease-in-out ${
-              activeSection === slide.title ? "scale-110 z-20" : "scale-90 opacity-70 z-10"
+              activeSection === slide.title
+                ? "scale-110 z-20"
+                : "scale-90 opacity-70 z-10"
             }`}
-            onClick={() => setActiveSection(slide.title)}
+            onClick={() => {
+              setActiveSection(slide.title);
+              swiperRef.current?.slideToLoop(slide.id - 1);
+            }}
           >
             <div className="bg-white rounded-2xl overflow-hidden flex justify-center items-center aspect-square shadow-lg cursor-pointer">
               <img
@@ -42,14 +51,19 @@ export default function Carousel({ activeSection, setActiveSection }) {
         ))}
       </Swiper>
 
-      {/* Custom dots controlled by state */}
+      {/* ✅ Clickable Custom Dots */}
       <div className="flex justify-center mt-6 space-x-2">
-        {slides.map((slide) => (
+        {slides.map((slide, index) => (
           <button
             key={slide.id}
-            onClick={() => setActiveSection(slide.title)}
+            onClick={() => {
+              setActiveSection(slide.title);
+              swiperRef.current?.slideToLoop(index);
+            }}
             className={`w-3 h-3 rounded-full transition-all duration-300 ${
-              activeSection === slide.title ? "bg-[#7f8275] scale-125" : "bg-gray-400"
+              activeSection === slide.title
+                ? "bg-[#b08968] scale-125"
+                : "bg-gray-400"
             }`}
           ></button>
         ))}

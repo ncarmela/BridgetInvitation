@@ -12,10 +12,10 @@ export default function Footer() {
 
         {/* Event Details */}
         <p className="font-semibold text-base tracking-wide mb-1">
-          Bridget’s 18th Birthday
+          Bridget Catherine’s 18th Birthday
         </p>
         <p className="italic text-sm tracking-wide mb-5">
-          November 22, 2025 · Luzviminda Catering, Cabanatuan City
+          November 22, 2025 · 3:30 pm · Luzviminda Catering, Cabanatuan City
         </p>
 
         {/* Divider */}
