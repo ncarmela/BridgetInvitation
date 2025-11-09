@@ -50,7 +50,7 @@ export default function Rsvp() {
                     rel="noopener noreferrer"
                     className="underline hover:text-[#5c4033]"
                   >
-                    Bridget Catherine Mariano 
+                    Bridget Catherine N. Mariano 
                   </a>
                 </span>
                 <span className="flex items-center gap-2">
