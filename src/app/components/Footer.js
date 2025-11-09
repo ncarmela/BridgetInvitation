@@ -15,7 +15,7 @@ export default function Footer() {
           Bridget Catherine’s 18th Birthday
         </p>
         <p className="italic text-sm tracking-wide mb-5">
-          November 22, 2025 · 3:30 pm · Luzviminda Catering, Cabanatuan City
+          November 22, 2025 · 3:30 pm · Luzviminda’s Event Center, Cabanatuan City
         </p>
 
         {/* Divider */}
