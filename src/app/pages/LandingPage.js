@@ -38,7 +38,7 @@ export default function LandingPage() {
         [
           "Lindsay Manabat", "Aubrey Zipporah Germino", "Ma. Thearis Alcantara",
           "Christina Gem Siwa", "Melvy Anne Bautista", "Alexandra Nicole Sayson",
-          "Nina Carmela Nambio", "Myca Ysabelle Nambio", "June Tanco"
+          "Nina Carmela Nambio", "Myca Ysabelle Nambio", "Maria Carmela Alvarez"
         ]
       ]
     },
