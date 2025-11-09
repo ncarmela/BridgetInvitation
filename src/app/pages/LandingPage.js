@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import Nav from "../components/Nav";
 import Carousel from "../components/Carousel";
 import Card from "../components/Card";
 import DressCode from "../components/DressCode";
@@ -89,10 +88,10 @@ export default function LandingPage() {
       src="/pictures/Banner.png"
       alt="Banner"
       className="w-full mt-4 h-auto object-cover rounded-xl"
-      initial={{ opacity: 0, y: 50 }} // start hidden and lower
-      whileInView={{ opacity: 1, y: 0 }} // animate when scrolled into view
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }} 
       transition={{ duration: 0.8, ease: "easeOut" }}
-      viewport={{ once: true, amount: 0.2 }} // trigger once, when 20% visible
+      viewport={{ once: true, amount: 0.2 }}
     />
       </header>
 <main className="min-h-screen bg-gradient-to-b from-[#f7f4ef] to-[#f7f4ef] text-gray-800 text-center font-[serif] overflow-visible">

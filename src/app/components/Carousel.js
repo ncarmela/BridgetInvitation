@@ -26,7 +26,7 @@ export default function Carousel({ activeSection, setActiveSection }) {
 
   return (
     <div className="w-full relative py-7 bg-[#f7f4ef] overflow-visible">
-      {/* 🌸 MOBILE VIEW (scrollable swiper) */}
+      {/* MOBILE VIEW (scrollable swiper) */}
       {!isDesktop && (
         <>
           <Swiper
