@@ -19,7 +19,7 @@ export default function LandingPage() {
       names: [
         [
           "Lino Mariano", "Menard Nambio", "John Philip Nambio", "Rhoneil Nambio",
-          "Marvic Lorenz Reyes", "John Emmanuel Gonzales", "Renz Rafael Castillo",
+          "Marvin Christian Reyes", "John Emmanuel Gonzales", "Renz Rafael Castillo",
           "Renz Gabriel Castillo", "Dave Lemuel Tanco"],
         [
           "Carl Matthew Nambio", "Kryst Caleb Sayson", "Yohan Iñigo Gabriel",
@@ -38,7 +38,7 @@ export default function LandingPage() {
         [
           "Lindsay Manabat", "Aubrey Zipporah Germino", "Ma. Thearis Alcantara",
           "Christina Gem Siwa", "Melvy Anne Bautista", "Alexandra Nicole Sayson",
-          "Nina Carmela Nambio", "Myca Ysabelle Nambio", "Maria Carmela Alvarez"
+          "Nina Carmela Nambio", "Myca Ysabelle Nambio", "June Tanco"
         ]
       ]
     },
@@ -47,10 +47,10 @@ export default function LandingPage() {
       names: [
         [
           "Lance Santiago", "Maria Paz Reyes", "Gem Gonzales",
-          "June Tanco", "Lorelei Castillo", "Joyce Ann Nambio",
+          "Anna Belle Tanco", "Lorelei Castillo", "Joyce Ann Nambio",
           "Rosielyn Sayson", "Rolly Alvarez", "Cardy Amor Nambio"],
         [
-          "Helen Valcos", "Hilda Uy", "Hannah Palisoc", "Hasmine Soriano",
+          "Helen Valcos", "Hilda Uy", "Hannah Palisoc", "Cherry Ann Nambio",
           "Cita Shih", "Nicanora Bautista", "Renita Sawit",
           "Herminia Sardual", "Lorna Punzal"
         ]
@@ -122,7 +122,7 @@ export default function LandingPage() {
       <motion.img
         src="/pictures/PhotoStrip.png"
         alt="PhotoStrip"
-        className="w-full h-auto object-cover mt-4"
+        className="w-full h-auto object-cover mt-7 mb-5"
         variants={fadeUp}
         initial="hidden"
         whileInView="visible"

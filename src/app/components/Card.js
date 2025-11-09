@@ -9,7 +9,7 @@ export default function Card({ section }) {
         </h2>
 
         {/* 2 columns mirror-aligned with space in the middle */}
-        <div className="grid grid-cols-2 gap-x-6 gap-y-2 text-sm sm:text-base md:text-lg leading-relaxed text-[#5c4033]">
+        <div className="grid grid-cols-2 gap-x-6 text-sm sm:text-base md:text-lg leading-relaxed text-[#5c4033]">
           {/* LEFT COLUMN - right aligned */}
           <div className="text-right">
             {group.names[0].map((name) => (
