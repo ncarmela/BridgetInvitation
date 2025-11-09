@@ -2,8 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-/* 🧩 Fix for Swiper clipping shadows */
-.swiper,
+html, body {
+  overflow-x: hidden !important;
+}
+
+.swiper {
+  overflow: visible !important;
+}
+
 .swiper-wrapper {
   overflow: visible !important;
 }

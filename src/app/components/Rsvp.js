@@ -55,12 +55,12 @@ export default function Rsvp() {
                 </span>
                 <span className="flex items-center gap-2">
                   <FaPhoneAlt className="text-[#6b4f3b]" />
-                  <a
+                  <p
                     href="tel:09985516052"
                     className="underline hover:text-[#5c4033]"
                   >
                     (0998) 551 6052
-                  </a>
+                  </p>
                 </span>
               </p>
             </div>
