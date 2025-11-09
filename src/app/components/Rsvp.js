@@ -1,3 +1,5 @@
+import { FaFacebookF, FaPhoneAlt } from "react-icons/fa";
+
 export default function Rsvp() {
   return (
     <>
@@ -27,16 +29,39 @@ export default function Rsvp() {
             {/* Right side: Text */}
             <div className="max-w-lg text-[#6b4f3b] leading-relaxed">
               <p className="mb-4 tracking-wide text-base">
-                I’M OVERJOYED TO CELEBRATE THIS BEAUTIFUL MILESTONE WITH THE PEOPLE WHO MEAN THE MOST TO ME.
+                I’m overjoyed to celebrate this beautiful milestone with the people who mean the most to me.
               </p>
-              <p className="mb-4 tracking-wide text-base">
-                PLEASE LET ME KNOW IF YOU’LL BE JOINING MY SPECIAL DAY BY CLICKING THE RSVP BUTTON.
+             <p className="mb-4 font-semibold tracking-wide text-base">
+                I would be so happy to have you celebrate this special day with me! Please click the RSVP button and respond by  
+                <span className="text-[#620505]"> November 15 </span>  
+                so we can share an afternoon filled with love, laughter, and unforgettable memories.
               </p>
-              <p className="mb-4 font-semibold tracking-wide text-base">
-                KINDLY RSVP BY <span className="font-bold">NOVEMBER 15</span>. I CAN’T WAIT TO SHARE A NIGHT FILLED WITH LOVE, LAUGHTER, AND UNFORGETTABLE MEMORIES WITH YOU!
-              </p>
-              <p className="italic text-sm tracking-wide">
-                Due to limited seating, I’m unable to accommodate additional guests. Your understanding means the world to me — I truly look forward to celebrating this once-in-a-lifetime moment with you.
+
+
+
+              {/* New contact section */}
+              <p className="italic text-sm tracking-wide flex flex-col gap-2">
+                For any inquiries, feel free to reach out:
+                <span className="flex items-center gap-2 mt-1">
+                  <FaFacebookF className="text-brown-600" />
+                  <a
+                    href="https://bit.ly/3JJtW3p"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="underline hover:text-[#5c4033]"
+                  >
+                    Bridget Catherine Mariano 
+                  </a>
+                </span>
+                <span className="flex items-center gap-2">
+                  <FaPhoneAlt className="text-[#6b4f3b]" />
+                  <a
+                    href="tel:09985516052"
+                    className="underline hover:text-[#5c4033]"
+                  >
+                    (0998) 551 6052
+                  </a>
+                </span>
               </p>
             </div>
           </div>

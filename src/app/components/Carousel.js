@@ -25,24 +25,25 @@ export default function Carousel({ activeSection, setActiveSection }) {
   }, []);
 
   return (
-    <div className="w-full relative py-7 bg-[#f7f4ef] overflow-visible">
+    <div className="w-full relative py-7 bg-[#f7f4ef]">
       {/* MOBILE VIEW (scrollable swiper) */}
       {!isDesktop && (
         <>
           <Swiper
-            modules={[Pagination]}
-            spaceBetween={20}
-            slidesPerView={"auto"}
-            centeredSlides={true}
-            loop={true}
-            onSwiper={(swiper) => (swiperRef.current = swiper)}
-            onSlideChange={(swiper) => {
-              if (swiper?.realIndex != null && slides[swiper.realIndex]) {
-                setActiveSection(slides[swiper.realIndex].title);
-              }
-            }}
-            className="w-[calc(100%-20px)] mx-auto overflow-visible pb-8"
-          >
+              modules={[Pagination]}
+              spaceBetween={20}
+              slidesPerView={"auto"}
+              centeredSlides={true}
+              loop={true}
+              onSwiper={(swiper) => (swiperRef.current = swiper)}
+              onSlideChange={(swiper) => {
+                if (swiper?.realIndex != null && slides[swiper.realIndex]) {
+                  setActiveSection(slides[swiper.realIndex].title);
+                }
+              }}
+              className="w-[calc(100%-20px)] mx-auto overflow-hidden pb-8"
+            >
+
             {slides.map((slide) => (
               <SwiperSlide
                 key={slide.id}
