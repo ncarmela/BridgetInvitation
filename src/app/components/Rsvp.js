@@ -45,7 +45,7 @@ export default function Rsvp() {
                 <span className="flex items-center gap-2 mt-1">
                   <FaFacebookF className="text-brown-600" />
                   <a
-                    href="https://bit.ly/3JJtW3p"
+                    href="https://facebook.com/bridget.mariano.7"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="underline hover:text-[#5c4033]"
