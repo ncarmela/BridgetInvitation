@@ -60,12 +60,11 @@ export default function LandingPage() {
       names: [
         [
           "Kaila Cabran", "Kimberly Urian", "Erica Palisoc", "Gilbert Palisoc",
-          "Helvert Moraleda", "June Tanco", "Emerson Sayson", "Beatrice Sayson",
-          "Clouie Ico"],
+          "Helvert Moraleda", "Hasmine Soriano", "Heidi Galat", "June Tanco", "Emerson Sayson"],
         [
-          "Krycelle Agapito", "Kristien Florendo", "Nicamae Diamat", "Joshua Dave Sebastian",
-          "Felicia Angeles", "Myca Nambio",
-          "Nina Nambio", "Divinia Tobias", "Daniel Tobias"
+          "Beatrice Sayson", "Clouie Ico", "Krycelle Agapito", "Kristien Florendo", 
+          "Nicamae Diamat", "Joshua Dave Sebastian",
+          "Felicia Angeles", "Myca Nambio", "Nina Nambio"
         ]
       ]
     }
