@@ -64,7 +64,7 @@ export default function LandingPage() {
         [
           "Beatrice Sayson", "Clouie Ico", "Krycelle Agapito", "Kristien Florendo", 
           "Nicamae Diamat", "Joshua Dave Sebastian",
-          "Felicia Angeles", "Myca Nambio", "Nina Nambio"
+          "Felicia Angeles", "Myca Ysabelle Nambio", "Nina Carmela Nambio"
         ]
       ]
     }
